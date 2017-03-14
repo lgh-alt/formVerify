@@ -1,0 +1,10 @@
+*{margin:0;padding:0;}
+#main{width:1200px;margin:0 auto;padding:30px;}
+#myForm{width:600px;margin:0 auto;padding:15px;border:2px solid #ddd;}
+.row{padding-bottom:15px;}
+.row label{display:inline-block;width:125px;font-size:16px;text-align:right;}
+.row input{border:1px solid #ddd;border-radius:5px;line-height:28px;text-indent:12px;}
+.row span{color:red;font-size:12px;padding-left:10px;}
+.btnRow{padding:0 100px;}
+#subBtn{float:right;padding:6px 30px;border-radius:5px;border:1px solid #24e6f7;background-color:#24e6f7;color:#fff;transition:0.6s;cursor:pointer;}
+#subBtn:hover{background-color:#23bcca;border-color:#23bcca;}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/form.js"></script>
+</head>
+<body>
+	<div id="main">
+		<form action="" id="myForm">
+			<div class="row">
+				<label for="username">用户名：</label>
+				<input type="text" name="userName" id="username" value="" placeholder="用户名" onchange="eg.checkUserNmae()">
+				<span id="UN">必填!</span>
+			</div>
+			<div class="row">
+				<label for="passworld1">密  码：</label>
+				<input type="password" name="passworld1" value="" id="password1" placeholder="输入密码" onchange="eg.checkpassword1();">
+				<span id="PW1">必填</span>
+			</div>
+			<div class="row">
+				<label for="passworld2">确认密码：</label>
+				<input type="password" name="passworld2" value="" id="password2" placeholder="确认密码" onchange="eg.checkpassword2();">
+				<span id="PW2">必填</span>
+			</div>
+			<div class="row">
+				<label for="phone">手机号码：</label>
+				<input type="text" name="phone" value="" id="phone" placeholder="输入手机号" onchange="eg.phoneCheck();">
+				<span id="PH">必填</span>
+			</div>
+			<div class="row">
+				<label for="e-mail">邮 箱：</label>
+				<input type="e-mail" name="e-mail" value="" id="Email" placeholder="输入邮箱" onchange="eg.emailCheck();">
+				<span id="EM">必填</span>
+			</div>
+			
+			<div class="row">
+				<label for="sex">性别：</label>
+				男&nbsp;<input type="radio" name="sex" checked> 
+				女&nbsp;<input type="radio" name="sex">
+			</div>
+			<div class="row btnRow">
+				<button type="button" name="button" id="subBtn" onclick="eg.verify();">注册</button>
+			</div>
+			<div style="clear: both;"></div>
+		</form>
+	</div>
+</body>
+</html>
